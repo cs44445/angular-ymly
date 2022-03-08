@@ -1,0 +1,11 @@
+.bread-crumb {
+  display: flex;
+  align-items: center;
+  color: #72727b;
+}
+.bread-crumb app-breadcrumb-item:last-child .bread-crumb-item .content {
+  color: rgba(0, 0, 0, 0.5);
+}
+.bread-crumb app-breadcrumb-item:last-child .bread-crumb-item .separator {
+  display: none;
+}
