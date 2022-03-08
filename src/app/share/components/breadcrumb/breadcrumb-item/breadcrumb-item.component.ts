@@ -1,4 +1,4 @@
-import { Component, OnInit, Optional } from '@angular/core';
+import { Component, Input, OnInit, Optional } from '@angular/core';
 import { BreadcrumbComponent } from '../breadcrumb.component';
 
 @Component({
@@ -8,6 +8,7 @@ import { BreadcrumbComponent } from '../breadcrumb.component';
 })
 export class BreadcrumbItemComponent implements OnInit {
   myContext = { $implicit: 'World', my: 'svet' };
+  @Input() Separator = '>'
   constructor(@Optional() readonly parent: BreadcrumbComponent) { }
 
   ngOnInit(): void {
